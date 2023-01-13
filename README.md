@@ -1,5 +1,5 @@
 #  TASK 1: Software configuration 
-## 💡 Subtask 1: Why did I choose to participate in the Dare IT 
+## 💡 Subtask 1: Why did I choose to participate in the Dare IT?
 Hi, my name is Nikita. At the moment I continue my studies at a Polish university and deeply interested in the software development process and wanted to specialize in a specific area. Furthermore, I have learned that QA Automation Testing is in high demand and that having knowledge in this area would open up many opportunities for me in the future. My goal during and at the end of the project is:
 * Ability to write automated tests in Python + Selenium
 * Resources for further study
