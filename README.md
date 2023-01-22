@@ -7,3 +7,107 @@ Hi, my name is Nikita. At the moment I continue my studies at a Polish universit
 * Gaining new experience and advice that I want to use in my future work
 
 I believe that taking these courses will give me the tools and knowledge necessary to excel in this field. 👨🏻‍💻
+
+#  TASK 2: Selectors
+
+### 1. Scouts Panel heading
+- <details>
+  <summary>Click Me</summary>
+  <p>
+  
+  ```python
+  //*[@id="__next"]/form/div/div[1]/h5
+  ```
+  ```python
+ 
+  ```
+  ```python
+  /html/body/div/form/div/div[1]/h5
+  ```
+  </p>
+</details>
+
+### 2. Login input field 
+- <details>
+  <summary>Click Me</summary>
+  <p>
+  
+  ```python
+  //*[@id="login"]
+  ```
+  ```python
+  //*[@name="login"]
+  ```
+  ```python
+  /html/body/div/form/div/div[1]/div[1]/div/input
+  ```
+  </p>
+</details>
+
+### 3. Password input field 
+- <details>
+  <summary>Click Me</summary>
+  <p>
+  
+  ```python
+  //*[@id="password"]
+  ```
+  ```python
+  //*[@name="password"]
+  ```
+  ```python
+  /html/body/div/form/div/div[1]/div[2]/div/input
+  ```
+  </p>
+</details>
+   
+### 4. Remindpassword hyperlink
+- <details>
+  <summary>Click Me</summary>
+  <p>
+  
+  ```python
+  //*[@id="__next"]/form/div/div[1]/a
+  ```
+  ```python
+  //*[@class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss4 MuiTypography-colorPrimary"]
+  ```
+  ```python
+  /html/body/div/form/div/div[1]/a
+  ```
+  </p>
+</details>
+ 
+### 5. Select language listbox
+- <details>
+  <summary>Click Me</summary>
+  <p>
+  
+  ```python
+  //*[@id="__next"]/form/div/div[2]/div/div
+  ```
+  ```python
+ 
+  ```
+  ```python
+  /html/body/div/form/div/div[2]/div/div
+  ```
+  </p>
+</details>
+ 
+### 6. Sign In button
+- <details>
+  <summary>Click Me</summary>
+  <p>
+  
+  ```python
+  //*[@id="__next"]/form/div/div[2]/button
+  ```
+  ```python
+
+  ```
+  ```python
+  /html/body/div/form/div/div[2]/button
+  ```
+  </p>
+</details>
