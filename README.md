@@ -19,7 +19,7 @@ I believe that taking these courses will give me the tools and knowledge necessa
   //*[@id="__next"]/form/div/div[1]/h5
   ```
   ```python
- 
+  //*[contains(@class, "MuiTypography-root MuiTypography-h5")]
   ```
   ```python
   /html/body/div/form/div/div[1]/h5
@@ -61,7 +61,7 @@ I believe that taking these courses will give me the tools and knowledge necessa
   </p>
 </details>
    
-### 4. Remindpassword hyperlink
+### 4. Remind password hyperlink
 - <details>
   <summary>Click Me</summary>
   <p>
@@ -70,7 +70,7 @@ I believe that taking these courses will give me the tools and knowledge necessa
   //*[@id="__next"]/form/div/div[1]/a
   ```
   ```python
-  //*[@class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss4 MuiTypography-colorPrimary"]
+  //*[contains(@class, "MuiTypography-root MuiLink")]
   ```
   ```python
   /html/body/div/form/div/div[1]/a
@@ -87,7 +87,7 @@ I believe that taking these courses will give me the tools and knowledge necessa
   //*[@id="__next"]/form/div/div[2]/div/div
   ```
   ```python
- 
+  //*[contains(@class, "MuiSelect-root MuiSelect")]
   ```
   ```python
   /html/body/div/form/div/div[2]/div/div
@@ -104,7 +104,7 @@ I believe that taking these courses will give me the tools and knowledge necessa
   //*[@id="__next"]/form/div/div[2]/button
   ```
   ```python
-
+  //*[contains(@class, "MuiButtonBase-root MuiButton-root")]
   ```
   ```python
   /html/body/div/form/div/div[2]/button
