@@ -16,10 +16,10 @@ I believe that taking these courses will give me the tools and knowledge necessa
   <p>
   
   ```python
-  //*[@id="__next"]/form/div/div[1]/h5
+  //*[@id='__next']/form/div/div[1]/h5
   ```
   ```python
-  //*[contains(@class, "MuiTypography-root MuiTypography-h5")]
+  //*[contains(@class, 'MuiTypography-root MuiTypography-h5')]
   ```
   ```python
   /html/body/div/form/div/div[1]/h5
@@ -33,10 +33,10 @@ I believe that taking these courses will give me the tools and knowledge necessa
   <p>
   
   ```python
-  //*[@id="login"]
+  //*[@id='login']
   ```
   ```python
-  //*[@name="login"]
+  //*[@name='login']
   ```
   ```python
   /html/body/div/form/div/div[1]/div[1]/div/input
@@ -50,10 +50,10 @@ I believe that taking these courses will give me the tools and knowledge necessa
   <p>
   
   ```python
-  //*[@id="password"]
+  //*[@id='password']
   ```
   ```python
-  //*[@name="password"]
+  //*[@name='password']
   ```
   ```python
   /html/body/div/form/div/div[1]/div[2]/div/input
@@ -67,10 +67,10 @@ I believe that taking these courses will give me the tools and knowledge necessa
   <p>
   
   ```python
-  //*[@id="__next"]/form/div/div[1]/a
+  //*[@id='__next']/form/div/div[1]/a
   ```
   ```python
-  //*[contains(@class, "MuiTypography-root MuiLink")]
+  //*[contains(@class, 'MuiTypography-root MuiLink')]
   ```
   ```python
   /html/body/div/form/div/div[1]/a
@@ -84,10 +84,10 @@ I believe that taking these courses will give me the tools and knowledge necessa
   <p>
   
   ```python
-  //*[@id="__next"]/form/div/div[2]/div/div
+  //*[@id='__next']/form/div/div[2]/div/div
   ```
   ```python
-  //*[contains(@class, "MuiSelect-root MuiSelect")]
+  //*[contains(@class, 'MuiSelect-root MuiSelect')]
   ```
   ```python
   /html/body/div/form/div/div[2]/div/div
@@ -101,10 +101,10 @@ I believe that taking these courses will give me the tools and knowledge necessa
   <p>
   
   ```python
-  //*[@id="__next"]/form/div/div[2]/button
+  //*[@id='__next']/form/div/div[2]/button
   ```
   ```python
-  //*[contains(@class, "MuiButtonBase-root MuiButton-root")]
+  //*[contains(@class, 'MuiButtonBase-root MuiButton-root')]
   ```
   ```python
   /html/body/div/form/div/div[2]/button
