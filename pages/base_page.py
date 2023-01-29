@@ -19,7 +19,6 @@ class BasePage():
 
     def assert_element_text(self, driver, xpath, expected_text):
         """Comparing expected text with observed value from web element
-
             :param driver: webdriver instance
             :param xpath: xpath to element with text to be observed
             :param expected_text: text what we're expecting to be found
