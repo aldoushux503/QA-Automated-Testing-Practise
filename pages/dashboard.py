@@ -1,3 +1,5 @@
+import time
+
 from pages.base_page import BasePage
 
 
@@ -46,4 +48,10 @@ class Dashboard(BasePage):
     last_updated_report_textbox_xpath = '//*[text()="Last updated report"]'
     last_updated_report_link_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[3]/div/div/a[5]'
 
-    pass
+    # DashBoard URL and expected title for test
+    dashboard_url = "https://scouts-test.futbolkolektyw.pl/en"
+    expected_title = "Scouts panel"
+
+    def check_dashboard_page_title(self):
+        time.sleep(5)
+        assert self.get_page_title(self.dashboard_url) == self.expected_title

@@ -63,4 +63,3 @@ class AddMatch(BasePage):
     submit_button_xpath = '//*[@id="__next"]/div[1]/main/div[2]/form/div[3]/button[1]'
     clear_button_xpath = '//*[@id="__next"]/div[1]/main/div[2]/form/div[3]/button[2]'
 
-    pass
