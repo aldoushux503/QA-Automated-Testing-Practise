@@ -29,7 +29,7 @@ class TestLoginPage(unittest.TestCase):
         add_player = AddPlayer(self.driver)
         add_player.check_add_player_page_title()
 
-        # Click submit button
+        # Click on the submit button
         add_player.click_on_the_submit_button()
 
     @classmethod
