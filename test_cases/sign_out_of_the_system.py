@@ -1,5 +1,4 @@
 import os
-import time
 import unittest
 from selenium import webdriver
 
@@ -8,7 +7,7 @@ from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestLoginPage(unittest.TestCase):
+class TestSignOut(unittest.TestCase):
 
     @classmethod
     def setUp(self):
@@ -18,17 +17,19 @@ class TestLoginPage(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_login_in_to_the_system(self):
+    def test_sign_out_of_system(self):
         user_login = LoginPage(self.driver)  # Create and assign variable class LoginPage and Dashboard
         dashboard_page = Dashboard(self.driver)
 
         user_login.check_login_page_title()  # Check login page title
-        user_login.check_scout_panel_text_label()  # Check text above login field
         user_login.type_in_email("user01@getnada.com")  # Enter correct Login data
         user_login.type_in_password("Test-1234")  # Enter correct Password data
         user_login.click_on_the_sign_in_button()  # Log into the webpage
 
         dashboard_page.check_dashboard_page_title()  # Check test dashboard page title
+        dashboard_page.click_on_sign_out_button()  # Sign out of the system
+
+        user_login.check_login_page_title()  # Check login page title
 
 
     @classmethod
