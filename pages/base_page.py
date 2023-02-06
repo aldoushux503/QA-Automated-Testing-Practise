@@ -51,3 +51,6 @@ class BasePage():
 
         select = self.driver.find_element(selector_type, '//*[text()="{0}"]'.format(text))
         wait.until(EC.element_to_be_clickable(select)).click()
+
+    def screen_shoot(self, save_name):
+        self.driver.save_screenshot("{0}.png".format(save_name))

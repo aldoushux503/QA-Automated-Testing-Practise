@@ -35,18 +35,23 @@ class Dashboard(BasePage):
     # XPath to Activity container
     activity_container_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[3]'
     activity_container_title_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[3]/div/div/h2'
+
     # XPath last created player
     last_created_player_textbox_xpath = '//*[text()="Last created player"]'
     last_created_player_link_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[3]/div/div/a[1]'
+
     # XPath last updated player
     last_updated_player_textbox_xpath = '//*[text()="Last updated player"]'
     last_updated_player_link_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[3]/div/div/a[2]'
+
     # XPath last created match
     last_created_match_textbox_xpath = '//*[text()="Last created match"]'
     last_created_match_link_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[3]/div/div/a[3]'
+
     # XPath last updated match
     last_updated_match_textbox_xpath = '//*[text()="Last updated match"]'
     last_updated_match_link_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[3]/div/div/a[4]'
+
     # XPath last updated report
     last_updated_report_textbox_xpath = '//*[text()="Last updated report"]'
     last_updated_report_link_xpath = '//*[@id="__next"]/div[1]/main/div[3]/div[3]/div/div/a[5]'
@@ -55,12 +60,25 @@ class Dashboard(BasePage):
     dashboard_url = "https://scouts-test.futbolkolektyw.pl/en"
     expected_title = "Scouts panel"
     expected_language_text_english = "English"
+    expected_last_added_player_name = "Cat"
+    expected_last_added_player_surname = "Paw"
 
     wait = WebDriverWait(driver, 10)
 
     def check_dashboard_page_title(self):
         self.wait_for_element_to_be_clickable(self.menu_players_button_xpath)
         assert self.get_page_title(self.dashboard_url) == self.expected_title
+
+    def check_language_button_text(self):
+        self.wait_for_element_to_be_clickable(self.menu_language_button_xpath)
+        self.assert_element_text(self.driver, self.menu_language_button_xpath, self.expected_language_text_english)
+
+    def check_last_added_player(self):
+        self.assert_element_text(self.driver,
+                                 self.last_created_player_link_xpath,
+                                 "{0} {1}".format(self.expected_last_added_player_name.upper(),
+                                                  self.expected_last_added_player_surname.upper())
+                                 )
 
     def click_on_the_add_player_button(self):
         self.click_on_the_element(self.shortcut_add_player_button_xpath)
@@ -71,5 +89,6 @@ class Dashboard(BasePage):
     def click_on_language_button(self):
         self.click_on_the_element(self.menu_language_button_xpath)
 
-    def check_language_button_text(self):
-        self.assert_element_text(self.driver, self.menu_language_button_xpath, self.expected_language_text_english)
+    def create_screen_shoot_dashboard(self, save_name):
+        self.screen_shoot(save_name)
+

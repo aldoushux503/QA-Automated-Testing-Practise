@@ -38,5 +38,7 @@ class LoginPage(BasePage):
     def check_invalid_password_message(self):
         self.visibility_of_element_located(self.password_invalid_message_xpath, self.expected_invalid_password)
 
+    def create_screen_shoot_login_page(self, save_name):
+        self.screen_shoot(save_name)
 
 

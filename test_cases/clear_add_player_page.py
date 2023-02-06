@@ -35,26 +35,10 @@ class TestClearPlayer(unittest.TestCase):
         add_player = AddPlayer(self.driver)  # Check add player page title
 
         add_player.check_add_player_page_title()  # Check title
+        add_player.fill_fields()  # Fill all fields on Add Player Page
+        add_player.click_on_the_clear_button()  # Clear all fields
 
-        add_player.type_in_email("cat_lover@gmail.com")
-        add_player.type_in_phone("+48884404404")
-        add_player.type_in_age("05.02.2023")
-        add_player.type_in_level("Professional")
-        add_player.type_in_district("Masovia")
-        add_player.type_in_name("Cat")
-        add_player.type_in_weight("70")
-        add_player.type_in_leg("Left leg")
-        add_player.type_in_main_position("Quarterback")
-        add_player.type_in_achievement("Grammy")
-        add_player.type_in_surname("Paw")
-        add_player.type_in_height("170")
-        add_player.type_in_club("Real Madrid")
-        add_player.type_in_second_position("Goalkeeper")
-        add_player.type_in_laczy_pilka("text ")
-        add_player.type_in_ninety("text")
-        add_player.type_in_facebook("cat_love.facebook.com")
-
-        add_player.click_on_the_clear_button()
+        add_player.check_cleared_player_fields()  # Check that the fields are clear
 
     @classmethod
     def tearDown(self):

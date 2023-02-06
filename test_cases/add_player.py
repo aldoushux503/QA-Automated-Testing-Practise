@@ -2,6 +2,7 @@ import os
 import time
 import unittest
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 from pages.add_player_page import AddPlayer
 from pages.dashboard import Dashboard
@@ -33,27 +34,15 @@ class TestAddPlayer(unittest.TestCase):
 
     def test_add_player(self):
         add_player = AddPlayer(self.driver)  # Check add player page title
+        dashboard_page = Dashboard(self.driver)
 
         add_player.check_add_player_page_title()  # Check title
+        add_player.fill_fields()  # Fill all fields on Add Player page
+        add_player.click_on_the_submit_button()  # Add new player to database
+        add_player.click_on_the_main_page_button()  # Go to dashboard page
 
-        add_player.type_in_email("cat_lover@gmail.com")
-        add_player.type_in_phone("+48884404404")
-        add_player.type_in_age("05.02.2023")
-        add_player.type_in_level("Professional")
-        add_player.type_in_district("Masovia")
-        add_player.type_in_name("Cat")
-        add_player.type_in_weight("70")
-        add_player.type_in_leg("Left leg")
-        add_player.type_in_main_position("Quarterback")
-        add_player.type_in_achievement("Grammy")
-        add_player.type_in_surname("Paw")
-        add_player.type_in_height("170")
-        add_player.type_in_club("Real Madrid")
-        add_player.type_in_second_position("Goalkeeper")
-        add_player.type_in_laczy_pilka("text ")
-        add_player.type_in_ninety("text")
-        add_player.type_in_facebook("cat_love.facebook.com")
-        add_player.click_on_the_submit_button()
+        dashboard_page.check_dashboard_page_title()  # Check test dashboard page title
+        dashboard_page.check_last_added_player()  # Check last added player on the dashboard page
 
     @classmethod
     def tearDown(self):
