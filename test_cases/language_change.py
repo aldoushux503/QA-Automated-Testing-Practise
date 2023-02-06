@@ -8,7 +8,7 @@ from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestLoginPage(unittest.TestCase):
+class TestLanguageChange(unittest.TestCase):
 
     @classmethod
     def setUp(self):
@@ -18,7 +18,7 @@ class TestLoginPage(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_login_in_to_the_system(self):
+    def test_change_language(self):
         user_login = LoginPage(self.driver)  # Create and assign variable class LoginPage and Dashboard
         dashboard_page = Dashboard(self.driver)
 
@@ -28,7 +28,9 @@ class TestLoginPage(unittest.TestCase):
         user_login.type_in_password("Test-1234")  # Enter correct Password data
         user_login.click_on_the_sign_in_button()  # Log into the webpage
 
-        dashboard_page.check_dashboard_page_title()  # Check test dashboard page title
+        dashboard_page.check_dashboard_page_title()  # Check dashboard page title
+        dashboard_page.click_on_language_button()  # Check test dashboard page title
+        dashboard_page.check_language_button_text()  # Check language changed to Polish
 
     @classmethod
     def tearDown(self):

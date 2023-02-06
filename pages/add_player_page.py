@@ -98,6 +98,9 @@ class AddPlayer(BasePage):
     def click_on_the_submit_button(self):
         self.click_on_the_element(self.submit_button_xpath)
 
+    def click_on_the_clear_button(self):
+        self.click_on_the_element(self.clear_button_xpath)
+
     def type_in_email(self, email):
         self.field_send_keys(self.email_field_xpath, email)
 

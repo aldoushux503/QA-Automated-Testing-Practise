@@ -54,6 +54,7 @@ class Dashboard(BasePage):
     # DashBoard URL and expected title for test
     dashboard_url = "https://scouts-test.futbolkolektyw.pl/en"
     expected_title = "Scouts panel"
+    expected_language_text_english = "English"
 
     wait = WebDriverWait(driver, 10)
 
@@ -66,3 +67,9 @@ class Dashboard(BasePage):
 
     def click_on_sign_out_button(self):
         self.click_on_the_element(self.menu_sign_out_button_xpath)
+
+    def click_on_language_button(self):
+        self.click_on_the_element(self.menu_language_button_xpath)
+
+    def check_language_button_text(self):
+        self.assert_element_text(self.driver, self.menu_language_button_xpath, self.expected_language_text_english)

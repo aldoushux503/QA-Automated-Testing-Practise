@@ -9,7 +9,7 @@ from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestAddPlayer(unittest.TestCase):
+class TestClearPlayer(unittest.TestCase):
 
     @classmethod
     def setUp(self):
@@ -31,7 +31,7 @@ class TestAddPlayer(unittest.TestCase):
         dashboard_page.check_dashboard_page_title()  # Check dashboard page title
         dashboard_page.click_on_the_add_player_button()  # Go to Add player page
 
-    def test_add_player(self):
+    def test_clear_player_page(self):
         add_player = AddPlayer(self.driver)  # Check add player page title
 
         add_player.check_add_player_page_title()  # Check title
@@ -53,7 +53,8 @@ class TestAddPlayer(unittest.TestCase):
         add_player.type_in_laczy_pilka("text ")
         add_player.type_in_ninety("text")
         add_player.type_in_facebook("cat_love.facebook.com")
-        add_player.click_on_the_submit_button()
+
+        add_player.click_on_the_clear_button()
 
     @classmethod
     def tearDown(self):

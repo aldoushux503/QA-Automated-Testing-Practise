@@ -16,7 +16,7 @@ class TestInvalidLogin(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_login_in_to_the_system(self):
+    def test_invalid_login_in(self):
         user_login = LoginPage(self.driver)  # Create and assign variable class LoginPage
 
         user_login.check_login_page_title()  # Check login page title

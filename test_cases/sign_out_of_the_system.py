@@ -31,7 +31,6 @@ class TestSignOut(unittest.TestCase):
 
         user_login.check_login_page_title()  # Check login page title
 
-
     @classmethod
     def tearDown(self):
         self.driver.quit()
