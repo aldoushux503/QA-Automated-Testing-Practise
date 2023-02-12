@@ -9,7 +9,7 @@ class AddPlayer(BasePage):
     expected_title = "Add player"
 
     # XPath to the label add player
-    add_match_title_xpath = '//*[@id="__next"]/div[1]/main/div[2]/form/div[1]/div/span'
+    add_player_title_xpath = '//*[@id="__next"]/div[1]/main/div[2]/form/div[1]/div/span'
 
     # XPath to email label and field
     email_label_xpath = '//*[@id="__next"]/div[1]/main/div[2]/form/div[2]/div/div[1]/div/label'
@@ -113,6 +113,9 @@ class AddPlayer(BasePage):
     ninety = "text"
     facebook = "cat_love.facebook.com"
 
+    expected_edit_player_title = "Edit player {0} {1}".format(name, surname)
+    edit_player_title_xpath = '//span[text()="Edit player {0} {1}"]'.format(name, surname)
+
     # Sample empty field
     cleared_field = ""
 
@@ -151,6 +154,9 @@ class AddPlayer(BasePage):
     def check_add_player_page_title(self):
         self.wait_for_element_to_be_clickable(self.clear_button_xpath)
         assert self.get_page_title(self.add_player_url) == self.expected_title
+
+    def check_is_player_added(self):
+        self.assert_element_text(self.driver, self.edit_player_title_xpath, self.expected_edit_player_title)
 
     def click_on_the_submit_button(self):
         self.click_on_the_element(self.submit_button_xpath)

@@ -10,7 +10,6 @@ class LoginPage(BasePage):
     scouts_panel_title_xpath = "//*[contains(@class, 'MuiTypography-root MuiTypography-h5')]"
     remind_password_xpath = "//*[contains(@class, 'MuiTypography-root MuiLink')]"
     select_language_xpath = "//*[contains(@class, 'MuiSelect-root MuiSelect')]"
-    sing_in_xpath = "///*[contains(@class, 'MuiButtonBase-root MuiButton-root')]"
     password_invalid_message_xpath = "//*[@id='__next']/form/div/div[1]/div[3]/span"
 
     # Login URL and expected title for test

@@ -60,8 +60,6 @@ class Dashboard(BasePage):
     dashboard_url = "https://scouts-test.futbolkolektyw.pl/en"
     expected_title = "Scouts panel"
     expected_language_text_english = "English"
-    expected_last_added_player_name = "Catt"
-    expected_last_added_player_surname = "Paw"
 
     wait = WebDriverWait(driver, 10)
 
@@ -72,13 +70,6 @@ class Dashboard(BasePage):
     def check_language_button_text(self):
         self.wait_for_element_to_be_clickable(self.menu_language_button_xpath)
         self.assert_element_text(self.driver, self.menu_language_button_xpath, self.expected_language_text_english)
-
-    def check_last_added_player(self):
-        self.assert_element_text(self.driver,
-                                 self.last_created_player_link_xpath,
-                                 "{0} {1}".format(self.expected_last_added_player_name.upper(),
-                                                  self.expected_last_added_player_surname.upper())
-                                 )
 
     def click_on_the_add_player_button(self):
         self.click_on_the_element(self.shortcut_add_player_button_xpath)
