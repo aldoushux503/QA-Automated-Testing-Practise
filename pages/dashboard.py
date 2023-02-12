@@ -60,7 +60,7 @@ class Dashboard(BasePage):
     dashboard_url = "https://scouts-test.futbolkolektyw.pl/en"
     expected_title = "Scouts panel"
     expected_language_text_english = "English"
-    expected_last_added_player_name = "Cat"
+    expected_last_added_player_name = "Catt"
     expected_last_added_player_surname = "Paw"
 
     wait = WebDriverWait(driver, 10)

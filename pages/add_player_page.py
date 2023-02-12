@@ -100,7 +100,7 @@ class AddPlayer(BasePage):
     age = "05.02.2023"
     level = "Professional"
     district = "Masovia"
-    name = "Cat"
+    name = "Catt"
     weight = "70"
     leg = "Left leg"
     main_position = "Quarterback"
