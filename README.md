@@ -113,4 +113,4 @@ I believe that taking these courses will give me the tools and knowledge necessa
 </details>
 
 # Task 4: Test cases
-The link  leads to google disk where there are files with HTML report of test cases, their description and video demonstration: [Click to open google disk](https://github.com/aldoushux503/QA-RobotFramework-DareIT)
+The link  leads to Google Drive where there are files with HTML report of test cases, their description and video demonstration: [Click to open Google Drive](https://drive.google.com/drive/folders/1YWM_Fl9kCJ8-IZAHBiLpKSkHNKV67gdn?usp=share_link)
