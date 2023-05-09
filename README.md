@@ -1,4 +1,4 @@
-#  TASK 1: Software configuration 
+#  Task 1: Software configuration 
 ## 💡 Subtask 1: Why did I choose to participate in the Dare IT?
 Hi, my name is Nikita. At the moment I continue my studies at a Polish university and deeply interested in the software development process and wanted to specialize in a specific area. Furthermore, I have learned that QA Automation Testing is in high demand and that having knowledge in this area would open up many opportunities for me in the future. My goal during and at the end of the project is:
 * Ability to write automated tests in Python + Selenium
@@ -8,7 +8,7 @@ Hi, my name is Nikita. At the moment I continue my studies at a Polish universit
 
 I believe that taking these courses will give me the tools and knowledge necessary to excel in this field. 👨🏻‍💻
 
-#  TASK 2: Selectors
+#  Task 2: Selectors
 
 ### 1. Scouts Panel heading
 - <details>
@@ -111,3 +111,6 @@ I believe that taking these courses will give me the tools and knowledge necessa
   ```
   </p>
 </details>
+
+# Task 4: Test cases
+The link  leads to google disk where there are files with HTML report of test cases, their description and video demonstration: [Click to open google disk](https://github.com/aldoushux503/QA-RobotFramework-DareIT)
